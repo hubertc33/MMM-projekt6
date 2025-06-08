@@ -110,7 +110,6 @@ def run_sim():
     plt.xlabel("Czas [s]")
     
 
-    # wykres
     plt.figure(figsize=(10, 5))
     plt.plot(t, theta2e, label='θ2 (Euler)')
     plt.plot(t, omega2e, label='ω2 (Euler)')
@@ -127,7 +126,7 @@ root = tk.Tk()
 root.title("Symulator układu – RK4 / Euler")
 
 frame = tk.Frame(root)
-frame.pack(padx=10, pady=10)
+frame.pack(padx=100, pady=10)
 
 param_names = ["J1", "J2", "b1", "b2", "n1", "n2", "dt", "Tsym", "θ1(0)", "ω1(0)", "f", "A"]
 entries = {}
